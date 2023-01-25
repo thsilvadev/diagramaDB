@@ -1,22 +1,23 @@
 # diagramaDB  
 Trabalho individual do Módulo 4 do curso de Desenvolvimento WEB Fullstack em parceria com o Senac-RJ.  
+Link para o diagrama: https://drive.google.com/file/d/1gZXL2IBiYZyrdYkZtjSmu23xSUGowcxZ/view?usp=sharing
 
 # Entidades  
 
-## Resilia:  
+### Resilia:  
 cnpj_empresa (pk) = INT (14)  
 id_curso (fk) = INT (999)  
 nome_empresa = VARCHAR (100)  
 endereco_web = VARCHAR (150)  
 area_atuacao = VARCHAR (50)   
 
-## Curso:  
+### Curso:  
 id_curso (pk) = INT (999)  
 ementa = VARCHAR (250)  
 duracao_curso = INT (9999)  
 preco_padrao = INT (999999)  
 
-## Instituicao:  
+### Instituicao:  
 
 id_instituicao (pk) = INT (99999)  
 id_curso (fk) = INT (999)  
@@ -26,7 +27,7 @@ nome_instituicao = VARCHAR (100)
 pessoa_coordenadora = VARCHAR (150)  
 endereco_instituicao = VARCHAR (250)  
 
-## Aluno:  
+### Aluno:  
 
 cpf_aluno (pk) = VARCHAR (11)  
 id_turma (fk) = INT (999999)  
@@ -37,7 +38,7 @@ presenca_soft = FLOAT
 presenca_hard = FLOAT  
 tipo_bolsa = VARCHAR (15)  
 
-## Turma:  
+### Turma:  
 
 id_turma (pk) = INT (999999)  
 cpf_facilitador (fk) = INT (11)  
@@ -50,7 +51,7 @@ horario = TIME
 turno = VARCHAR (15)  
 cod_turma = VARCHAR (15)  
 
-## Facilitador:  
+### Facilitador:  
 
 cpf_facilitador (pk)  = INT (11)  
 id_curso (fk) = INT (999)  
